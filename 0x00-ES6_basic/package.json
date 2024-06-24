@@ -1,0 +1,39 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A project with Jest, Babel, and ESLint",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "babel-node 0-main.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/cli": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {}
+  },
+  "author": "",
+  "license": "ISC"
+}
